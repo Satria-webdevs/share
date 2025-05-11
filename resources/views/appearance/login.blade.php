@@ -33,23 +33,46 @@
         .login-box .btn {
             width: 100%;
         }
+
+        .apa {
+            margin-bottom: 200px;
+        }
     </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{{ asset('image/image.png') }}" alt="Logo" width="40" height="34"
+                    class="d-inline-block align-text-top">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Daftar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container login-container">
         <div class="login-header">
-            <h1>Bilu Talk</h1>
-            <p>Login to your Account</p>
-            <p>test</p>
+            <img src="{{ asset('image/bilu.png') }}" alt="Gambar" width="170px" height="120px">
         </div>
-        <div class="login-box">
+        <div class="login-box apa">
             <form>
-                <div class="form-group">
+                <img src="{{ asset('image/user.png') }}" alt="Gambar" height="80px">
+
+                <h6 class="text-start">Login to your account</h6>
+                <div class="form-group text-start">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter email">
                 </div>
-                <div class="form-group">
+                <div class="form-group text-start">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" id="password" placeholder="Enter password">
                 </div>
